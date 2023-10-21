@@ -1,43 +1,74 @@
 {
-  "name": "carnival",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "@types/jest": "^27.5.2",
-    "@types/node": "^16.18.58",
-    "@types/react": "^18.2.25",
-    "@types/react-dom": "^18.2.11",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
-    "typescript": "^4.9.5",
-    "web-vitals": "^2.1.4"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+	"name": "@pabrick/react-carnival",
+	"version": "1.0.0",
+	"description": "Minigame (like the Cooking game in Cult of the Lamb) to incorporate as component on bigger apps.",
+	"author": "Pablo Jiménez Beneyto (@pabrick)",
+	"license": "MIT",
+	"scripts": {
+		"start": "react-scripts start",
+		"build": "react-scripts build",
+		"test": "jest --config jestconfig.json",
+		"eject": "react-scripts eject"
+	},
+	"eslintConfig": {
+		"extends": [
+			"react-app",
+			"react-app/jest"
+		]
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	},
+	"dependencies": {
+		"@testing-library/jest-dom": "^5.17.0",
+		"@testing-library/react": "^14.0.0",
+		"@testing-library/user-event": "^13.5.0",
+		"@types/node": "^16.18.58",
+		"@types/react": "^18.2.25",
+		"@types/react-dom": "^18.2.11",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"react-scripts": "5.0.1",
+		"typescript": "^4.9.5",
+		"web-vitals": "^2.1.4"
+	},
+	"devDependencies": {
+		"@types/jest": "^29.5.5",
+		"@types/styled-components": "^5.1.28",
+		"jest": "^29.7.0",
+		"jest-canvas-mock": "^2.5.2",
+		"jest-environment-jsdom": "^29.7.0",
+		"jest-styled-components": "^7.1.1",
+		"styled-components": "^6.0.8",
+		"ts-jest": "^29.1.1"
+	},
+	"keywords": [
+		"react",
+		"typescript",
+		"carnival",
+		"minigame"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Pabrick/react-carnival.git"
+	},
+	"bugs": {
+		"url": "https://github.com/Pabrick/react-carnival/issues"
+	},
+	"homepage": "https://github.com/Pabrick/react-carnival#readme",
+	"main": "dist/cjs/index.js",
+	"module": "dist/esm/index.js",
+	"files": [
+		"dist"
+	],
+	"types": "dist/index.d.ts"
 }

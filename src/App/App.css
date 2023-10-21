@@ -1,0 +1,14 @@
+.App {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.Wrapper {
+	border: 1px solid black;
+	height: 50px;
+	width: 500px;
+}
