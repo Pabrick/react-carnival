@@ -8,7 +8,7 @@ import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 const packageJson = require('./package.json');
 const rollupConfig = [
 	{
-		input: 'src/components/index.ts',
+		input: 'src/index.ts',
 		output: [
 			{
 				file: packageJson.main,
@@ -32,10 +32,11 @@ const rollupConfig = [
 			}),
 			terser(),
 		],
+		external: ['react', 'react-dom', 'styled-components'],
 	},
 	{
-		input: 'dist/esm/components/index.d.ts',
-		output: [{ file: 'dist/index.d.ts', format: 'esm' }],
+		input: 'dist/esm/index.d.ts',
+		output: [{ file: 'dist/types.d.ts', format: 'esm' }],
 		plugins: [dts.default()],
 	},
 ];
