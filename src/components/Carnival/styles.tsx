@@ -4,6 +4,8 @@ export const CarnivalWrapper = styled.section`
 	position: relative;
 	height: 100%;
 	width: 100%;
+	min-height: 10px;
+	min-width: 20px;
 	background-color: transparent;
 	border: 0;
 	margin: 0;
