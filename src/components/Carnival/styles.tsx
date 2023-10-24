@@ -14,7 +14,7 @@ export const CarnivalWrapper = styled.section`
 	cursor: pointer;
 `;
 
-export const Bar = styled.div`
+export const CarnivalBar = styled.div`
 	position: absolute;
 	height: 100%;
 	width: 100%;
@@ -24,7 +24,7 @@ export const Bar = styled.div`
 	pointer-events: none;
 `;
 
-export const Zone = styled.div<{
+export const CarnivalZone = styled.div<{
 	$width?: string;
 	$left?: string;
 }>`
@@ -38,7 +38,7 @@ export const Zone = styled.div<{
 	pointer-events: none;
 `;
 
-export const Marker = styled.div`
+export const CarnivalMarker = styled.div`
 	position: relative;
 	background-color: black;
 	top: 0;
@@ -52,7 +52,7 @@ export const Marker = styled.div`
 	pointer-events: none;
 `;
 
-export const Arrow = styled.div<{
+export const CarnivalArrow = styled.div<{
 	$height: string;
 }>`
 	position: absolute;

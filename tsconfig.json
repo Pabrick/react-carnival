@@ -26,12 +26,7 @@
     "esnext"
   ],
   "include": [
-    "src",
-    "workbench/index.tsx",
-    "workbench/react-app-env.d.ts",
-    "workbench/reportWebVitals.ts",
-    "workbench/setupTests.ts",
-    "workbench/App"
+    "src"
   ],
   "exclude": [
     "dist",

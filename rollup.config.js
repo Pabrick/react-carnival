@@ -1,6 +1,7 @@
 import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import typescript from '@rollup/plugin-typescript';
+import json from '@rollup/plugin-json';
 import dts from 'rollup-plugin-dts';
 import { terser } from 'rollup-plugin-terser';
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
@@ -17,7 +18,7 @@ const rollupConfig = [
 			},
 			{
 				file: packageJson.module,
-				format: 'esm',
+				format: 'es',
 				sourcemap: true,
 			},
 		],
@@ -31,12 +32,13 @@ const rollupConfig = [
 				declarationDir: 'dist',
 			}),
 			terser(),
+			json(),
 		],
 		external: ['react', 'react-dom', 'styled-components'],
 	},
 	{
-		input: 'dist/esm/index.d.ts',
-		output: [{ file: 'dist/types.d.ts', format: 'esm' }],
+		input: 'dist/es/index.d.ts',
+		output: [{ file: packageJson.types, format: 'es' }],
 		plugins: [dts.default()],
 	},
 ];
