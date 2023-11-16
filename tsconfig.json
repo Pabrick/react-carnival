@@ -1,41 +1,35 @@
 {
   "compilerOptions": {
-    "allowJs": true,
-    "allowSyntheticDefaultImports": true,
-    "declaration": true,
-    "declarationDir": "types",
-    "emitDeclarationOnly": false,
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "isolatedModules": true,
-    "jsx": "react-jsx",
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": [
+      "ES2020",
+      "DOM",
+      "DOM.Iterable"
+    ],
     "module": "ESNext",
-    "moduleResolution": "node",
-    "noFallthroughCasesInSwitch": true,
-    "outDir": "dist",
-    "resolveJsonModule": true,
-    "rootDir": "src",
     "skipLibCheck": true,
-    "sourceMap": true,
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "esModuleInterop": true,
+    /* Linting */
     "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
   },
-  "target": "es2016",
-  "lib": [
-    "dom",
-    "dom.iterable",
-    "esnext"
-  ],
   "include": [
-    "src"
+    "src",
+    "rollup.config.js"
   ],
-  "exclude": [
-    "dist",
-    "node_modules",
-    "src/**/*.test.tsx",
-    "src/**/*.stories.tsx"
-  ],
-  "typeRoots": [
-    "node_modules/@types",
-    "src/types"
-  ],
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ]
 }

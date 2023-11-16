@@ -6,7 +6,8 @@ import dts from 'rollup-plugin-dts';
 import { terser } from 'rollup-plugin-terser';
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 
-const packageJson = require('./package.json');
+import * as packageJson from './package.json';
+
 const rollupConfig = [
 	{
 		input: 'src/index.ts',
@@ -34,7 +35,7 @@ const rollupConfig = [
 			terser(),
 			json(),
 		],
-		external: ['react', 'react-dom', 'styled-components'],
+		external: ['react', 'react-dom'],
 	},
 	{
 		input: 'dist/es/index.d.ts',

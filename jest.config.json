@@ -3,6 +3,7 @@
 		"^.+\\.(t|j)sx?$": "ts-jest"
 	},
 	"testRegex": "(/tests/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+	"testEnvironment": "jsdom",
 	"moduleFileExtensions": [
 		"ts",
 		"tsx",
@@ -11,5 +12,8 @@
 		"json",
 		"node"
 	],
-	"testEnvironment": "jsdom"
+	"moduleNameMapper": {
+		"\\.(css|less|sass|scss)$": "<rootDir>/src/mocks/styles.mock.tsx",
+		"\\.(gif|ttf|eot|svg)$": "<rootDir>/src/mocks/files.mock.tsx"
+	}
 }
