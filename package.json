@@ -1,6 +1,6 @@
 {
   "name": "@pabrick/react-carnival",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Minigame (like the Cooking game in Cult of the Lamb) to incorporate as component on bigger apps.",
   "author": "Pablo Jiménez Beneyto (@pabrick)",
   "license": "MIT",

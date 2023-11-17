@@ -4,7 +4,7 @@ import typescript from '@rollup/plugin-typescript';
 import json from '@rollup/plugin-json';
 import { terser } from 'rollup-plugin-terser';
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
-// import styles from 'rollup-plugin-styles';
+import styles from 'rollup-plugin-styles';
 import dts from 'rollup-plugin-dts';
 
 import * as packageJson from './package.json';
@@ -28,9 +28,9 @@ const rollupConfig = [
 			peerDepsExternal(),
 			resolve(),
 			commonjs(),
-			// styles({
-			// 	mode: 'inject',
-			// }),
+			styles({
+				mode: 'inject',
+			}),
 			typescript({
 				tsconfig: './tsconfig.json',
 				declaration: true,
@@ -45,7 +45,7 @@ const rollupConfig = [
 	{
 		input: `${packageJson.buildFolder}/${esModuleConfig.format}/index.d.ts`,
 		output: [{ file: packageJson.types, format: esModuleConfig.format }],
-		// external: [/\.(sass|scss|css)$/],
+		external: [/\.(sass|scss|css)$/],
 		plugins: [dts.default()],
 	},
 ];
