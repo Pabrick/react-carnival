@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { AnimationState, CarnivalProps, DirectionState } from './types';
-import './styles.scss';
+// import './styles.scss';
 
 const getRandom = (max: number) => Math.floor(Math.random() * (Math.floor(max) + 1));
 

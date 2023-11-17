@@ -1,16 +1,17 @@
 {
   "name": "@pabrick/react-carnival",
-  "version": "0.0.5",
+  "version": "0.0.7",
   "description": "Minigame (like the Cooking game in Cult of the Lamb) to incorporate as component on bigger apps.",
   "author": "Pablo Jiménez Beneyto (@pabrick)",
   "license": "MIT",
   "type": "module",
   "files": [
-    "dist"
+    "lib"
   ],
-  "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
-  "types": "dist/types.d.ts",
+  "buildFolder": "lib",
+  "main": "lib/cjs/index.js",
+  "module": "lib/es/index.js",
+  "types": "lib/types.d.ts",
   "keywords": [
     "react",
     "typescript",

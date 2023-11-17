@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Carnival from '../Carnival';
+import Carnival from '../components/Carnival';
 import './styles.scss';
 
 export const Workbench = () => {

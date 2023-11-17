@@ -1,7 +1,7 @@
 import { fireEvent, render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
 
-import Carnival from '../Carnival';
+import Carnival from '../components/Carnival';
 
 describe('Carnival component', () => {
 	const mockSuccess = jest.fn(() => {});
