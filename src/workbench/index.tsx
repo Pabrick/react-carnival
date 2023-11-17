@@ -1,7 +1,9 @@
-import Carnival from '../components/Carnival';
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import Carnival from '../Carnival';
 import './styles.scss';
 
-const App = () => {
+export const Workbench = () => {
 	const success = () => {
 		console.info('SUCCESS!');
 	};
@@ -11,7 +13,7 @@ const App = () => {
 	};
 
 	return (
-		<div className='App'>
+		<div className='workbench'>
 			<div className='Wrapper'>
 				<Carnival size={25} duration={500} onSuccess={success} onFailure={fail} random={true} />
 			</div>
@@ -19,4 +21,8 @@ const App = () => {
 	);
 };
 
-export default App;
+ReactDOM.createRoot(document.getElementById('workbench')!).render(
+	<React.StrictMode>
+		<Workbench />
+	</React.StrictMode>
+);

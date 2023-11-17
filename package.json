@@ -1,10 +1,22 @@
 {
   "name": "@pabrick/react-carnival",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Minigame (like the Cooking game in Cult of the Lamb) to incorporate as component on bigger apps.",
   "author": "Pablo Jiménez Beneyto (@pabrick)",
   "license": "MIT",
   "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/types.d.ts",
+  "keywords": [
+    "react",
+    "typescript",
+    "carnival",
+    "minigame"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -43,6 +55,8 @@
     "rollup": "^4.1.4",
     "rollup-plugin-dts": "^6.1.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-scss": "^3.0.0",
+    "rollup-plugin-styles": "^4.0.0",
     "rollup-plugin-terser": "^7.0.2",
     "sass": "^1.69.5",
     "ts-jest": "^29.1.1",
@@ -56,12 +70,6 @@
     "react-dom": "18.2.0",
     "tslib": "^2.6.2"
   },
-  "keywords": [
-    "react",
-    "typescript",
-    "carnival",
-    "minigame"
-  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Pabrick/react-carnival.git"
@@ -72,11 +80,5 @@
   "homepage": ".",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/pabrick"
-  },
-  "main": "dist/cjs/index.js",
-  "module": "dist/es/index.js",
-  "files": [
-    "dist"
-  ],
-  "types": "dist/types.d.ts"
+  }
 }
